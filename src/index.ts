@@ -1,2 +1,7 @@
-export * from "./hooks/useMQTT";
-export * from "./mqtt/connection";
+export { useMQTT } from "./hooks/useMQTT";
+export {
+    defineMQTTClientConnection,
+    getClient,
+    subscribeToMQTTTopic,
+    unsubscribeFromTopic, MQTTClientOptions
+} from "./mqtt/connection";

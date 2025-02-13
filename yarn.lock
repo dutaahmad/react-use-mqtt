@@ -1449,20 +1449,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-use-mqtt@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-use-mqtt@workspace:."
-  dependencies:
-    "@types/react": "npm:^19.0.8"
-    mqtt: "npm:^5.10.3"
-    tsup: "npm:^8.3.6"
-    typescript: "npm:^5.7.3"
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  languageName: unknown
-  linkType: soft
-
 "readable-stream@npm:^3.0.2":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
@@ -1805,6 +1791,20 @@ __metadata:
   checksum: 10c0/d4679609bb2a9b48eeaf84632b6d844128d2412b95b6de07d53d8ee8baf4ca0857c9331dfa510390a0727b550fd543d4d1a10995ad86cdf078423fbb8d99831d
   languageName: node
   linkType: hard
+
+"tatanation-react-use-mqtt@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tatanation-react-use-mqtt@workspace:."
+  dependencies:
+    "@types/react": "npm:^19.0.8"
+    mqtt: "npm:^5.10.3"
+    tsup: "npm:^8.3.6"
+    typescript: "npm:^5.7.3"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  languageName: unknown
+  linkType: soft
 
 "thenify-all@npm:^1.0.0":
   version: 1.6.0
