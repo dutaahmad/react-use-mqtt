@@ -1,2 +1,3 @@
-# react-use-mqtt
+# React useMQTT Hook
+
 Efficient MQTT data listener

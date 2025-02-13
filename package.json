@@ -1,0 +1,30 @@
+{
+  "name": "react-use-mqtt",
+  "version": "1.0.0",
+  "description": "Simple and Efficient React Hook to Subscribe MQTT Topics",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dutaahmad/react-use-mqtt.git"
+  },
+  "keywords": [
+    "react",
+    "hook"
+  ],
+  "author": "Nahdi Duta Ahmad",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/dutaahmad/react-use-mqtt/issues"
+  },
+  "homepage": "https://github.com/dutaahmad/react-use-mqtt#readme",
+  "dependencies": {
+    "mqtt": "^5.10.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  }
+}
