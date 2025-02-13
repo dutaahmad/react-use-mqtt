@@ -1,6 +1,6 @@
 {
   "name": "tatanation-react-use-mqtt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and Efficient React Hook to Subscribe MQTT Topics",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts"
