@@ -1,11 +1,11 @@
-<h1 align="center">Tatanation React useMQTT Hook</h1>
+<h1 align="center">Tatanation React useMQTT Hook (｡🇯‌🇸‌)</h1>
 
 <p align="center">
-  <img src="https://tatanation-small-assets.s3.ap-southeast-2.amazonaws.com/Elipse.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIARWPFIHDDD3LJ3ZSQ%2F20250213%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Date=20250213T230621Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAIQRjJtGQ0uLFWeYcXKlb2wt96rAg%2Fn3CzgvL%2FuCUQ%2BjAiB4WqDQvjAtqL97RKchC0PRKKOm8%2FbYObpNC48Jcgu8QSqZAgggEAAaDDExNjk4MTc3NDUzNCIMYZis6cywykRopd%2FQKvYBW10kfXRfFd7quWBfpkq3U2Ni6FuwJotErGDnVweTRY2M1kWMtv4sfje6gZoAq1Tb7eXU%2BKNsF%2Fq%2BHpiX9Nb3nDDfipg8Qm7XhsUkb3C9z%2BnHdCEF9i3WSKzjz6F43C3idXKGtiMd4LoZ8JPAp2yrlcpEjOlIIIG%2FRkneBRbaZWiX863UJPelvbzV%2Fp6zbNXnOW2LuyV5rhhOr7b4x7MdXLjCp0mPDYHBDLXwA%2B5%2F9bGIwJQSK41siepmTLPYQwvAihRMi9LtKEseIwnwg7pwFn4Y5SuwIinYRZwBky9HEYIJdiTi46rCeqOeirZwuEtHVCUAqWdaMLPwub0GOt8B8vRpDxjKjD89WVbb23JWEeabhGF6TmHw9IeRmFXQfiOoXWob%2BdSLv6tp8obX2mjpQbBdEnKr%2Bee%2BnwJvVV4PQkD6SvL6E6SPV2jF0HwHgUwyTFNO3r4qN063LwoTgDWz0LxHJEUPEriKLVgu0M8ISqUMaFqwkHxJrxvrfSZTLYScUSxMrZC1vRz03TLxUeyIRyOv44bi0tTdoyNRBNvlK9RWez4ZVi6708HcGgepZSz72cnL%2BkhnE%2BZo8kSFrDI%2BWXOn8aaHjwL2i26yrSbM4RcHYr12HcgrY5cIf7QV1Q%3D%3D&X-Amz-Signature=ad4c9d05586f108d33158286d9856617efc30412e3597ad05be8057773f9727a&X-Amz-SignedHeaders=host&response-content-disposition=inline" alt="Tatanation Logo" width="200"/>
+  <img src="https://i.imgur.com/NzFlweJ.png" alt="Tatanation Logo" width="200"/>
 </p>
 
 <p align="center">
-  <strong>📦 NPM Package: <code>tatanation-react-use-mqtt</code></strong>
+  <a href="https://www.npmjs.com/package/tatanation-react-use-mqtt"> <strong>📦 NPM Package: <code>tatanation-react-use-mqtt</code></strong> </a>
 </p>
 
 ## 📌 Introduction
@@ -17,8 +17,10 @@
 - 📡 **Subscribe** to MQTT topics easily
 - 🔄 **Automatic reconnection** handling
 - 🎯 **Customizable connection setup**
-- ⚡ **Optimized React state management**
-- 🛠️ **Logging control** (disable logs when needed)
+- ⚡ **Optimized React state management** (almost stateless!)
+- 🛠️ **Logging control** (that you can disable logs when needed)
+- ⚛️ **Support React's Older Versions** (React 16.8.0 and above are supported!)
+- **TS** **Typesafe Guarantee** (TypeScript is supported!)
 
 ## 🚀 Installation
 
