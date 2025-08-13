@@ -55,12 +55,14 @@ export function useMQTT<T>(
         subscribe(); // Initial subscription
 
         return () => {
-            unsubscribeFromTopic(topic, true, memoizedConfig.debug);
+            unsubscribeFromTopic(topic, false, memoizedConfig.debug); // Do not disconnect the client here as it's a singleton
             isSubscribed.current = false;
             setError(null);
         };
     }, [subscribe]);
 
-    return { error, retrySubscribe };
+    const client = useMemo(() => getClient(memoizedConfig), [memoizedConfig]);
+
+    return { client, error, retrySubscribe };
 }
 
