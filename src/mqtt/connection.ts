@@ -2,6 +2,7 @@ import mqtt from "mqtt";
 
 export interface MQTTClientOptions extends mqtt.IClientOptions {
     debug?: boolean; // Allow users to enable/disable logs
+    url?: string; // Allow users to provide a full MQTT URL string
 }
 
 // MQTT client and state tracking
@@ -25,7 +26,21 @@ export function getClient(config: MQTTClientOptions): mqtt.MqttClient {
     if (!mqttClient) {
         if (config.debug) console.log("Instantiating MQTT connection...");
 
-        mqttClient = mqtt.connect(config);
+        let connectUrl: string | undefined;
+        if (config.url) {
+            connectUrl = config.url;
+        } else if (config.host) {
+            const protocol = config.protocol || 'mqtt';
+            const port = config.port ? `:${config.port}` : '';
+            connectUrl = `${protocol}://${config.host}${port}`;
+        }
+
+        if (connectUrl) {
+            mqttClient = mqtt.connect(connectUrl, config);
+        } else {
+            // Fallback to original behavior if no URL or host is provided
+            mqttClient = mqtt.connect(config);
+        }
 
         if (!isClientInitialized) {
             mqttClient.once("connect", () => config.debug && console.log("Connected to MQTT broker."));
