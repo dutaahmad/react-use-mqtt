@@ -16,7 +16,6 @@ const topicHandlers: Map<string, (topic: string, message: Buffer) => void> = new
  * The user must provide this function's output to `getClient`.
  */
 export function defineMQTTClientConnection(options: MQTTClientOptions): MQTTClientOptions {
-    if (!options.port) options.port = undefined;
     return { ...options, debug: options.debug ?? false }; // Default debug to false
 }
 
@@ -32,12 +31,14 @@ export function getClient(config: MQTTClientOptions): mqtt.MqttClient {
             connectUrl = config.url;
         } else if (config.host) {
             const protocol = config.protocol || 'mqtt';
-            const port = config.port ? `:${config.port}` : '';
-            connectUrl = `${protocol}://${config.host}${port}`;
+            let connectUrlParts = [`${protocol}://${config.host}`];
+            if (config.port !== undefined) {
+                connectUrlParts.push(`:${config.port}`);
+            }
+            connectUrl = connectUrlParts.join('');
         }
 
         if (connectUrl) {
-            if (!config.port) config.port = undefined;
             mqttClient = mqtt.connect(connectUrl, config);
         } else {
             // Fallback to original behavior if no URL or host is provided
