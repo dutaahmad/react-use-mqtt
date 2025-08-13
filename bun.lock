@@ -4,19 +4,19 @@
     "": {
       "name": "tatanation-react-use-mqtt",
       "dependencies": {
-        "mqtt": "^5.10.3",
+        "mqtt": "latest",
       },
       "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.2",
-        "@rollup/plugin-node-resolve": "^16.0.0",
-        "@types/react": "^19.0.8",
-        "rollup": "^4.34.6",
-        "rollup-plugin-typescript2": "^0.36.0",
-        "typescript": "^5.7.3",
+        "@rollup/plugin-commonjs": "latest",
+        "@rollup/plugin-node-resolve": "latest",
+        "@types/react": "latest",
+        "rollup": "latest",
+        "rollup-plugin-typescript2": "latest",
+        "typescript": "latest",
       },
       "peerDependencies": {
-        "react": ">=16.8.0",
-        "react-dom": ">=16.8.0",
+        "react": "latest",
+        "react-dom": "latest",
       },
     },
   },

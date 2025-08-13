@@ -1,6 +1,6 @@
 {
   "name": "tatanation-react-use-mqtt",
-  "version": "1.0.15",
+  "version": "1.0.156",
   "description": "Simple and Efficient React Hook to Subscribe MQTT Topics",
   "type": "module",
   "main": "./dist/index.js",
@@ -32,19 +32,19 @@
   },
   "homepage": "https://github.com/dutaahmad/react-use-mqtt#readme",
   "dependencies": {
-    "mqtt": "^5.10.3"
+    "mqtt": "^5.14.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "@types/react": "^19.0.8",
-    "rollup": "^4.34.6",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/react": "^19.1.10",
+    "rollup": "^4.46.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
 }
